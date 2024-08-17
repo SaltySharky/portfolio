@@ -122,8 +122,8 @@
 
 /* Video container styles */
 .video-container {
-  flex: 1; /* Allow containers to grow and shrink */
-  max-width: 100%; /* Ensure containers don't exceed parent width */
+  flex: 1 1 calc(50% - 20px); /* Allow containers to grow/shrink and take up 50% of the row width minus the gap */
+  max-width: calc(50% - 20px); /* Ensure containers don't exceed half of the row width minus the gap */
   position: relative; /* Positioning context for the iframe */
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0; /* Height of the container */
